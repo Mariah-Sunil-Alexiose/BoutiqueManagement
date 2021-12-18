@@ -14,16 +14,16 @@
     </nav>
     <body>   
         <h3 class="text-center">Code for Boutique Management</h3>
-        <p>#include &lt;iostream&gt;</p>
-        <p>using namespace std;</p>
-        <div>class cartItem{<br>   
+        <p class="space">#include &lt;iostream&gt;</p>
+        <p class="space">using namespace std;</p>
+        <div class="space">class cartItem{<br>   
             <p class="tab">string name;<br>
                 int quantity; <br>       
                 float price;<br>       
                 int id;<br>
             </p>
         </div>
-        <p>public:</p>    
+        <p class="space">public:</p>    
         <div class="tab">cartItem(){<br>
             <p class="tab">name = "";<br>        
                 quantity = 0;<br>
@@ -67,16 +67,16 @@
             <p class="tab">return price;</p>
         }
         </div>
-        <p>};</p>
+        <p class="space">};</p>
 
-        <div>class Item{<br>   
+        <div class="space">class Item{<br>   
             <p class="tab">int id;<br>
                 string name;<br>       
                 float price;<br>       
                 int quantity;<br>
             </p>
         </div>
-        <p>public:</p>    
+        <p class="space">public:</p>    
         <div class="tab">Item(){<br>
             <p class="tab">name = "";<br>        
                 quantity = 0;<br>
@@ -145,10 +145,10 @@
             <p class="tab">return name;</p>
         }
         </div>
-        <p>};</p>
+        <p class="space">};</p>
                 
-        <div>class Shop{ 
-        <p>public:</p>
+        <div class="space">class Shop{ 
+        <p class="space">public:</p>
             <p class="tab">Item items[50];<br>
                 int customID, numberOfItems;<br>       
                 Item sortedStack[50];<br>       
@@ -372,9 +372,9 @@
         }
         </div>
 
-        <p>};</p>
+        <p class="space">};</p>
                 
-        <div>void MaintenanceSwitch(Shop &shop){
+        <div class="space">void MaintenanceSwitch(Shop &shop){
             <div class="tab">int choice;<br>
                 <div class="tab">do{
                     <div class="tab">cout &lt;&lt; endl;<br>
@@ -445,7 +445,7 @@
             </div>
         </div>
 
-        <div>void TransactionSwitch(Shop &shop){
+        <div class="space">void TransactionSwitch(Shop &shop){
             <div class="tab">int choice, i, k=0, itemsInCart = 0, deleteID, q, totalPrice = 0, tempID;<br>
                 cartItem cart[50];<br>
                 do{
@@ -562,7 +562,7 @@
         }
         </div>
 
-        <div>int main(){
+        <div class="space">int main(){
             <div class="tab">int choice;<br>
                 Shop shop;<br>
                 do{
@@ -590,7 +590,7 @@
                             <div class="tab">case 3:
                                 <p class="tab">exit(0);</p>
                             </div>
-                            <p class="tab">default: cout&lt;&lt;"Wrong choice!"&lt;&lt;endl;<br><p>
+                            <p class="tab">default: cout&lt;&lt;"Wrong choice!"&lt;&lt;endl;<br><p class="space">
                         }
                     </div>
                 }while (choice != 3);<br>
