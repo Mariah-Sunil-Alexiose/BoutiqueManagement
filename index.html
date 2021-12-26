@@ -10,10 +10,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand mb-0 h1">Project Based Learning</a>
+          <a class="navbar-brand mb-0 h5">Mariah Sunil Alexiose & Sariga Sashi Kumar</a>
         </div>
     </nav>
     <body>   
-        <h3 class="text-center">Code for Boutique Management</h3>
+        <h4 class="pt-2 text-center">Code for Boutique Management</h3>
         <p class="space">#include &lt;iostream&gt;</p>
         <p class="space">using namespace std;</p>
         <div class="space">class cartItem{<br>   
@@ -102,7 +103,6 @@
             <p class="tab">cout &lt;&lt; "\nItem ID: " &lt;&lt; id;<br>
                 cout &lt;&lt; "\nItem Name: " &lt;&lt; name;<br>
                 cout &lt;&lt; "\nItem Price: Dhs." &lt;&lt; price;<br>
-                cout &lt;&lt; "\nEnter Item Price: Dhs.";<br>
                 cout &lt;&lt; "\nItem Quantity: " &lt;&lt; quantity;<br>
                 cout &lt;&lt; "\n";<br>
             </p>
@@ -187,12 +187,12 @@
                         </div>
                     }
                     </div>
-                    }<br>
-                    pushToStack(tempItems[maxIndex]);<br>
-                    maxPrice = 0;<br>
-                    for(k=maxIndex;k&lt;tempNumberOfItems;k++){<br>
+                    <p class="tab">pushToStack(tempItems[maxIndex]);</br>
+                    maxPrice = 0;</p>
+                    <div class="tab">for(k=maxIndex;k&lt;tempNumberOfItems;k++)<br>
                         <p class="tab">tempItems[k] = tempItems[k+1];</p>
                         tempNumberOfItems--;<br>
+                    </div>
                 }
             </div>
             }
@@ -211,17 +211,18 @@
                     <div class="tab">for(j=0;j&lt;tempNumberOfItems;j++){
                         <div class="tab">if(maxName &lt; tempItems[j].getName()){<br>
                             <p class="tab">maxName = tempItems[j].getName();<br>
-                            maxIndex = j;</p>
+                                maxIndex = j;
+                            </p>
                         }
                         </div>
-                        }<br>
+                    }
                     </div>
-                    }<br>
-                    pushToStack(tempItems[maxIndex]);<br>
-                    maxName = "";<br>
-                    for(k=maxIndex;k&lt;tempNumberOfItems;k++){<br>
+                    <p class="tab">pushToStack(tempItems[maxIndex]);</br>
+                    maxName = "";</p>
+                    <div class="tab">for(k=maxIndex;k&lt;tempNumberOfItems;k++)<br>
                         <p class="tab">tempItems[k] = tempItems[k+1];</p>
                         tempNumberOfItems--;<br>
+                    </div>
                 }
             </div>
             }
@@ -239,17 +240,18 @@
                     <div class="tab">for(j=0;j&lt;tempNumberOfItems;j++){
                         <div class="tab">if(maxID &lt; tempItems[j].getID()){<br>
                             <p class="tab">maxID = tempItems[j].getID();<br>
-                            maxIndex = j;</p>
+                                maxIndex = j;
+                            </p>
                         }
                         </div>
-                        }<br>
+                    }
                     </div>
-                    }<br>
-                    pushToStack(tempItems[maxIndex]);<br>
-                    maxID = 0;<br>
-                    for(k=maxIndex;k&lt;tempNumberOfItems;k++){<br>
+                    <p class="tab">pushToStack(tempItems[maxIndex]);</br>
+                    maxID = 0;</p>
+                    <div class="tab">for(k=maxIndex;k&lt;tempNumberOfItems;k++)<br>
                         <p class="tab">tempItems[k] = tempItems[k+1];</p>
                         tempNumberOfItems--;<br>
+                    </div>
                 }
             </div>
             }
